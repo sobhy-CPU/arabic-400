@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>بنك أسئلة اللغة العربية · ببساطة</title>
+<title>بنك أسئلة اللغة العربية · برجندي</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,9 +11,9 @@
 <style>
 /* Layout: official light exam portal. Navy header band with gold rule, single centered column, one question per screen with a numbered navigator, watermark tiled behind every question card. */
 :root{
-  --bg:#F3F5F9; --surface:#FFFFFF; --ink:#16233B; --ink-2:#4B5973; --line:#D6DDE9;
-  --navy:#1B3A6B; --navy-deep:#112847; --gold:#B58A2E; --gold-soft:#F7F0DC;
-  --sel:#E7EDF8; --ok:#1C7A4E; --ok-bg:#E3F3EA; --bad:#B3261E; --bad-bg:#FBE8E6;
+  --bg:#F8F2F3; --surface:#FFFFFF; --ink:#2A1219; --ink-2:#6B4E57; --line:#E7D5DB;
+  --navy:#7A1F3D; --navy-deep:#561229; --gold:#B58A2E; --gold-soft:#F7F0DC;
+  --sel:#F6E6EC; --ok:#1C7A4E; --ok-bg:#E3F3EA; --bad:#B3261E; --bad-bg:#FBE8E6;
   --display:"Noto Kufi Arabic","IBM Plex Sans Arabic",Tahoma,sans-serif;
   --body:"IBM Plex Sans Arabic",Tahoma,"Segoe UI",sans-serif;
   color-scheme:light;
@@ -35,8 +35,8 @@ a{color:var(--navy)}
 .mark{width:46px;height:46px;border-radius:8px;background:var(--gold);color:var(--navy-deep);display:grid;place-items:center;font:800 30px/1 var(--display);padding-bottom:4px}
 .wordmark{display:flex;flex-direction:column;line-height:1.25}
 .wordmark b{font:800 22px/1.2 var(--display);letter-spacing:.3px}
-.wordmark small{font-size:12px;color:#C9D5EA}
-.tagline{font-size:13px;color:#D9E2F2}
+.wordmark small{font-size:12px;color:#EBCBD6}
+.tagline{font-size:13px;color:#F1D9E1}
 
 main{padding-block:20px 96px}
 h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.5}
@@ -52,7 +52,7 @@ h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.5}
 .hero h1{font-size:26px;color:var(--navy-deep)}
 .hero p{margin:0;color:var(--ink-2)}
 .facts{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:4px}
-.fact{border:1px solid var(--line);border-radius:6px;padding:10px;text-align:center;background:#FAFBFD}
+.fact{border:1px solid var(--line);border-radius:6px;padding:10px;text-align:center;background:#FCF8F9}
 .fact b{display:block;font:700 20px/1.3 var(--display);color:var(--navy)}
 .fact span{font-size:13px;color:var(--ink-2)}
 .group{display:grid;gap:8px;margin-top:14px}
@@ -80,7 +80,7 @@ h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.5}
 .timer.low{color:var(--bad)}
 .row2{margin-top:8px;font-size:13.5px;color:var(--ink-2)}
 .row2 b{color:var(--ok)}
-.prog{height:6px;background:#E6EBF3;border-radius:3px;margin-top:8px;overflow:hidden}
+.prog{height:6px;background:#F0E3E8;border-radius:3px;margin-top:8px;overflow:hidden}
 .prog i{display:block;height:100%;background:var(--gold);width:0}
 
 .qhead{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:10px}
@@ -91,7 +91,7 @@ h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.5}
 .opt{display:flex;align-items:flex-start;gap:12px;text-align:start;width:100%;background:#fff;border:1.5px solid var(--line);border-radius:6px;padding:12px 14px;color:var(--ink);min-height:52px}
 .opt .lt{flex:0 0 30px;height:30px;border-radius:5px;border:1.5px solid var(--navy);color:var(--navy);display:grid;place-items:center;font-weight:700;font-size:15px;background:#fff}
 .opt .tx{flex:1;min-width:0;overflow-wrap:anywhere;padding-top:2px}
-button.opt:not(:disabled):hover{border-color:var(--navy);background:#F7F9FD}
+button.opt:not(:disabled):hover{border-color:var(--navy);background:#FBF3F6}
 .opt.sel{background:var(--sel);border-color:var(--navy)}
 .opt.sel .lt{background:var(--navy);color:#fff}
 .opt.ok{background:var(--ok-bg);border-color:var(--ok)}
@@ -102,7 +102,7 @@ button.opt:not(:disabled):hover{border-color:var(--navy);background:#F7F9FD}
 .opt .tag{font-size:12px;font-weight:600;white-space:nowrap;padding-top:4px}
 .opt.ok .tag{color:var(--ok)}
 .opt.bad .tag{color:var(--bad)}
-.exp{margin-top:14px;border-radius:6px;padding:12px 14px;font-size:15px;border:1px solid var(--line);background:#F8FAFD}
+.exp{margin-top:14px;border-radius:6px;padding:12px 14px;font-size:15px;border:1px solid var(--line);background:#FBF6F8}
 .exp b{color:var(--navy-deep)}
 .exp.ok{background:var(--ok-bg);border-color:#BFE2CF}
 .exp.bad{background:var(--bad-bg);border-color:#F1C6C2}
@@ -116,7 +116,7 @@ button.opt:not(:disabled):hover{border-color:var(--navy);background:#F7F9FD}
 .navigator h3{font-size:15px;margin-bottom:10px;color:var(--navy-deep)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(40px,1fr));gap:6px}
 .grid button{height:40px;border:1.5px solid var(--line);background:#fff;border-radius:5px;font-weight:600;font-variant-numeric:tabular-nums}
-.grid button.done{background:var(--sel);border-color:#A9BCDD}
+.grid button.done{background:var(--sel);border-color:#D9A5B7}
 .grid button.cur{background:var(--navy);border-color:var(--navy);color:#fff}
 .grid button.g-ok{background:var(--ok-bg);border-color:var(--ok)}
 .grid button.g-bad{background:var(--bad-bg);border-color:var(--bad)}
@@ -131,14 +131,14 @@ button.opt:not(:disabled):hover{border-color:var(--navy);background:#F7F9FD}
 .verdict.pass{background:var(--ok-bg);border-color:#BFE2CF;color:var(--ok)}
 .verdict.fail{background:var(--bad-bg);border-color:#F1C6C2;color:var(--bad)}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.stat{border-radius:6px;padding:10px;border:1px solid var(--line);background:#FAFBFD}
+.stat{border-radius:6px;padding:10px;border:1px solid var(--line);background:#FCF8F9}
 .stat b{display:block;font:700 24px/1.3 var(--display);font-variant-numeric:tabular-nums}
 .stat span{font-size:13px;color:var(--ink-2)}
 .stat.ok b{color:var(--ok)} .stat.bad b{color:var(--bad)}
 .topics{display:grid;gap:12px;margin-top:6px;text-align:start}
 .topic .t{display:flex;justify-content:space-between;gap:10px;font-size:14.5px;margin-bottom:4px}
 .topic .t span:last-child{font-variant-numeric:tabular-nums;color:var(--ink-2)}
-.bar{height:8px;background:#E6EBF3;border-radius:4px;overflow:hidden}
+.bar{height:8px;background:#F0E3E8;border-radius:4px;overflow:hidden}
 .bar i{display:block;height:100%;background:var(--navy)}
 .actions{display:flex;gap:10px;flex-wrap:wrap}
 .actions .btn{flex:1 1 180px}
@@ -162,7 +162,7 @@ button.opt:not(:disabled):hover{border-color:var(--navy);background:#F7F9FD}
 .mbtn{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;background:var(--navy);border:1.5px solid var(--navy);color:#fff;border-radius:8px;padding:14px 10px;min-height:76px}
 .mbtn:hover,.mbtn:active{background:var(--navy-deep)}
 .mbtn b{font:700 18px/1.4 var(--display)}
-.mbtn small{font-size:13px;color:#D9E2F2}
+.mbtn small{font-size:13px;color:#F1D9E1}
 .card.shot{border-top:4px solid var(--gold);padding:16px}
 .shead{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding-bottom:10px;margin-bottom:12px;border-bottom:1px solid var(--line)}
 .brand2{display:flex;align-items:center;gap:8px;color:var(--navy-deep)}
@@ -186,7 +186,7 @@ button.opt:not(:disabled):hover{border-color:var(--navy);background:#F7F9FD}
 .wa[hidden]{display:none}
 
 /* footer + whatsapp */
-.foot{background:var(--navy-deep);color:#D9E2F2;border-top:4px solid var(--gold);margin-top:8px}
+.foot{background:var(--navy-deep);color:#F1D9E1;border-top:4px solid var(--gold);margin-top:8px}
 .foot .in{padding-block:20px;display:grid;gap:6px;font-size:14px;text-align:center}
 .foot b{color:#fff;font-family:var(--display)}
 .foot .num{direction:ltr;unicode-bidi:isolate;font-weight:700;color:#fff;user-select:all}
@@ -209,7 +209,7 @@ button.opt:not(:disabled):hover{border-color:var(--navy);background:#F7F9FD}
 <style>:root{color-scheme:light}body{margin:0;font-size:14px}img{max-width:100%}[hidden]{display:none!important}</style>
 </head>
 <body><header class="top"><div class="in">
-    <div class="brand"><span class="mark" aria-hidden="true">ب</span><span class="wordmark"><b>ببساطة</b><small>صفحة تعليمية</small></span></div>
+    <div class="brand"><span class="mark" aria-hidden="true">ب</span><span class="wordmark"><b>برجندي</b><small>صفحة تعليمية</small></span></div>
     <span class="tagline">بنك أسئلة اللغة العربية · ٤٠٠ سؤال</span>
     <button class="homebtn" data-act="home" type="button">الصفحة الرئيسية</button>
   </div></header>
@@ -217,12 +217,12 @@ button.opt:not(:disabled):hover{border-color:var(--navy);background:#F7F9FD}
   <main><div class="in" id="main"></div></main>
 
   <footer class="foot"><div class="in">
-    <div>مقدم من صفحة <b>ببساطة</b></div>
-    <div>إعداد <b>مستر محمد سيد</b> و<b>مس نورهان إبراهيم</b></div>
-    <div>للتواصل واتساب: <span class="num">01505191893</span></div>
+    <div>مقدم من صفحة <b>برجندي</b></div>
+    <div>إعداد <b>مستر احمد صبحي</b> و<b>مس زينب نور الدين</b></div>
+    <div>للتواصل واتساب: <span class="num">01273404442</span></div>
   </div></footer>
 
-  <a class="wa" id="wa" href="https://wa.me/201505191893" target="_blank" rel="noopener" aria-label="تواصل معنا على واتساب">
+  <a class="wa" id="wa" href="https://wa.me/201273404442" target="_blank" rel="noopener" aria-label="تواصل معنا على واتساب">
     <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="15" r="12" fill="#fff"/><path d="M5 29l3.200-7.500 5 4.300z" fill="#fff"/><path d="M11 10.500c0 6 4.500 10.500 10.500 10.500l1.500-3.200-3.200-1.600-1.300 1.300c-1.900-.8-3.400-2.300-4.200-4.200l1.300-1.300-1.600-3.200z" fill="#1FA855"/></svg>
     <span>تواصل واتساب</span>
   </a>
@@ -636,17 +636,17 @@ add("العروض والبحور الشعرية","الشعراء الذين ين
 
 
 const LETTERS=['أ','ب','ج','د'];
-const WA='201505191893';
+const WA='201273404442';
 const EXAM_MIN=20;
 const MODELS=[0,1,2,3,4,5,6,7].map(m=>BANK.filter((_,i)=>i%8===m));
 const waUrl=t=>'https://wa.me/'+WA+'?text='+encodeURIComponent(t);
-const SUB_URL=waUrl('السلام عليكم، أرغب في الاشتراك في نماذج بنك أسئلة اللغة العربية - ببساطة بقيمة 100 جنيه.');
-const CHAT_URL=waUrl('السلام عليكم، لدي استفسار بخصوص بنك أسئلة اللغة العربية - ببساطة.');
+const SUB_URL=waUrl('السلام عليكم، أرغب في الاشتراك في نماذج بنك أسئلة اللغة العربية - برجندي بقيمة 70 جنيه.');
+const CHAT_URL=waUrl('السلام عليكم، لدي استفسار بخصوص بنك أسئلة اللغة العربية - برجندي.');
 const main=document.getElementById('main');
 let S={screen:'start',mode:'practice',leave:false,model:0,count:0,Q:[],ans:[],cur:0,t:0,total:0,tid:null,confirm:false,filter:'all'};
 
 function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
-function wm(){return '<div class="wm" aria-hidden="true">'+'<span>ببساطة</span>'.repeat(110)+'</div>';}
+function wm(){return '<div class="wm" aria-hidden="true">'+'<span>برجندي</span>'.repeat(110)+'</div>';}
 function fmt(s){s=Math.max(0,s);return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');}
 function build(){
   const src=MODELS[S.model];S.count=src.length;
@@ -654,8 +654,8 @@ function build(){
   S.ans=S.Q.map(()=>null);S.cur=0;S.confirm=false;S.filter='all';
   S.total=EXAM_MIN*60;S.t=S.total;
 }
-function shead(label){return `<div class="shead"><span class="brand2"><span class="mark sm" aria-hidden="true">ب</span><b>ببساطة</b></span><span class="sline">${label}</span></div>`;}
-function sfoot(){return '<div class="sfoot">مقدم من صفحة ببساطة · إعداد مستر محمد سيد ومس نورهان إبراهيم</div>';}
+function shead(label){return `<div class="shead"><span class="brand2"><span class="mark sm" aria-hidden="true">ب</span><b>برجندي</b></span><span class="sline">${label}</span></div>`;}
+function sfoot(){return '<div class="sfoot">مقدم من صفحة برجندي · إعداد مستر احمد صبحي ومس زينب نور الدين</div>';}
 function waShow(v){const w=document.getElementById('wa');if(w)w.hidden=!v;}
 function goHome(){clearInterval(S.tid);S.screen='start';S.leave=false;S.confirm=false;renderStart();}
 function toTop(){window.scrollTo({top:0,behavior:'auto'});}
@@ -692,9 +692,9 @@ function renderStart(){
       </ul></div>
     <div class="note">الأسئلة مبنية على شرح فيديو الأستاذ محمود عطية (خبير اللغة العربية)، وبعضها يعتمد على التفريغ الآلي للفيديو، فراجِع الأسماء والأرقام مع كتابك.</div>
     <div class="sub">
-      <div class="subtxt"><b>الاشتراك في جميع النماذج</b><span>100 جنيه</span></div>
+      <div class="subtxt"><b>الاشتراك في جميع النماذج</b><span>70 جنيه</span></div>
       <div class="subbtns">
-        <a class="btn gold" href="${SUB_URL}" target="_blank" rel="noopener">اشترك الآن 100ج</a>
+        <a class="btn gold" href="${SUB_URL}" target="_blank" rel="noopener">اشترك الآن 70ج</a>
         <a class="btn ghost" href="${CHAT_URL}" target="_blank" rel="noopener">تواصل واتساب</a>
       </div>
     </div>
@@ -739,7 +739,7 @@ function renderQuiz(){
   <section class="card navigator">
     <h3>لوحة الأسئلة</h3>
     <div class="grid">${S.Q.map((x,k)=>{let c='';const a=S.ans[k];if(k===i)c='cur';else if(a!==null){c=practice?(a===x.a?'g-ok':'g-bad'):'done';}return `<button class="${c}" data-act="jump" data-i="${k}" aria-label="السؤال ${k+1}">${k+1}</button>`;}).join('')}</div>
-    <div class="legend"><span><i style="background:var(--navy);border-color:var(--navy)"></i>الحالي</span><span><i style="background:var(--sel);border-color:#A9BCDD"></i>تمت الإجابة</span><span><i></i>بدون إجابة</span></div>
+    <div class="legend"><span><i style="background:var(--navy);border-color:var(--navy)"></i>الحالي</span><span><i style="background:var(--sel);border-color:#D9A5B7"></i>تمت الإجابة</span><span><i></i>بدون إجابة</span></div>
   </section>`;
 }
 
@@ -758,7 +758,7 @@ function renderResult(){
   const label=pct>=85?'ممتاز':pct>=70?'جيد جدًا':pct>=60?'جيد':'يحتاج إلى مراجعة';
   const cls=pct>=60?'pass':'fail';
   const used=fmt(S.total-S.t);
-  const msg=encodeURIComponent(`ببساطة: نتيجتي في النموذج ${S.model+1} من بنك أسئلة اللغة العربية - ببساطة ${right} من ${n} (${pct}%)`);
+  const msg=encodeURIComponent(`برجندي: نتيجتي في النموذج ${S.model+1} من بنك أسئلة اللغة العربية - برجندي ${right} من ${n} (${pct}%)`);
   const list=S.Q.map((q,i)=>({q,i,a:S.ans[i]})).filter(x=>S.filter==='all'||x.a!==x.q.a);
   main.innerHTML=`
   <section class="card score">${wm()}
@@ -777,7 +777,7 @@ function renderResult(){
     <div class="actions">
       <button class="btn gold" data-act="home">الصفحة الرئيسية</button>
       <a class="btn ghost" href="https://wa.me/${WA}?text=${msg}" target="_blank" rel="noopener" style="text-decoration:none">أرسل نتيجتك على واتساب</a>
-      <a class="btn" href="${SUB_URL}" target="_blank" rel="noopener" style="text-decoration:none">اشترك 100ج</a>
+      <a class="btn" href="${SUB_URL}" target="_blank" rel="noopener" style="text-decoration:none">اشترك 70ج</a>
     </div>
   </section>
   <div class="sec">
